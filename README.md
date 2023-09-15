@@ -1,0 +1,1 @@
+A simple HTTP server in Go for Windows Server 2022. The Dockerfile compiles the Go code for Windows and then builds a container image from the nanoserver-ltsc base image (OS version 10.0.20348).
