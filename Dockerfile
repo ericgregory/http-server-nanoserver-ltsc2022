@@ -7,10 +7,6 @@ RUN go mod download
 RUN go vet -v
 RUN go test -v
 
-ENV CGO_ENABLED=0
-ENV GOOS=windows
-ENV GOARCH=amd64 
-
 RUN go build main.go
 
 FROM mcr.microsoft.com/windows/nanoserver:ltsc2022
